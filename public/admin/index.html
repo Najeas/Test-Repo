@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="login-container" id="loginContainer">
+      <h1>Admin Login</h1>
+      <input type="password" id="passwordInput" placeholder="Enter password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div class="dashboard" id="dashboard" style="display: none">
+      <h1>Tracking Data</h1>
+      <div id="stats"></div>
+      <table id="linksTable">
+        <thead>
+          <tr>
+            <th>Tracking ID</th>
+            <th>Destination URL</th>
+            <th>Clicks</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
